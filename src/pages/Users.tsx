@@ -35,13 +35,13 @@ const Users: React.FC = () => {
     setCustomerFilters((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubSearch = () => {
-    console.log('Sub Users search filters:', subFilters);
-  };
+  // const handleSubSearch = () => {
+  //   console.log('Sub Users search filters:', subFilters);
+  // };
 
-  const handleCustomerSearch = () => {
-    console.log('Customers search filters:', customerFilters);
-  };
+  // const handleCustomerSearch = () => {
+  //   console.log('Customers search filters:', customerFilters);
+  // };
 
   const handleSubCreate = () => {
     console.log('Creating new sub user...');
@@ -210,7 +210,7 @@ const Users: React.FC = () => {
               </thead>
               <tbody>
                 <tr className="bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200">
-                  <td className="p-2 sm:p-3" colSpan="4">
+                  <td className="p-2 sm:p-3" colSpan={4}>
                     No data found
                   </td>
                 </tr>
@@ -398,7 +398,7 @@ const Users: React.FC = () => {
               </thead>
               <tbody>
                 <tr className="bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200">
-                  <td className="p-2 sm:p-3" colSpan="6">
+                  <td className="p-2 sm:p-3" colSpan={6}>
                     No data found
                   </td>
                 </tr>

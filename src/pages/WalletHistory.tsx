@@ -22,7 +22,7 @@ const WalletHistory: React.FC = () => {
           </thead>
           <tbody>
             <tr className="bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200">
-              <td className="p-2 sm:p-3" colSpan="3">
+              <td className="p-2 sm:p-3" colSpan={3}>
                 No data found
               </td>
             </tr>

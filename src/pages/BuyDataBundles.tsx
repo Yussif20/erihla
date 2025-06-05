@@ -240,7 +240,7 @@ const BuyDataBundles: React.FC = () => {
           </thead>
           <tbody>
             <tr className="bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-200">
-              <td className="p-2 sm:p-3" colSpan="7">
+              <td className="p-2 sm:p-3" colSpan={7}>
                 No data found
               </td>
             </tr>
