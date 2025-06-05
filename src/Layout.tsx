@@ -12,8 +12,9 @@ const Layout: React.FC = () => {
       <div className="flex-1 w-full">
         <Header
           onToggleSidebar={() => setIsSidebarCollapsed((prev) => !prev)}
-          isCollapsed={isSidebarCollapsed}
+          isSidebarOpen={!isSidebarCollapsed}
         />
+
         <main
           className={`pt-16 transition-all duration-300 
             ${
