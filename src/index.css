@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+button {
+  cursor: pointer;
+}
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9fafb; /* Equivalent to gray-50 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db; /* Equivalent to gray-300 */
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316; /* Equivalent to orange-500 */
+}
+
+::-webkit-scrollbar-corner {
+  background: #f9fafb; /* Equivalent to gray-50 */
+}
+
+/* Dark Mode Scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937; /* Equivalent to gray-800 */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563; /* Equivalent to gray-600 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #fb923c; /* Equivalent to orange-400 */
+}
+
+.dark ::-webkit-scrollbar-corner {
+  background: #1f2937; /* Equivalent to gray-800 */
+}
+
+/* Firefox Scrollbar */
+@supports (scrollbar-color: auto) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db #f9fafb; /* gray-300 and gray-50 */
+  }
+
+  .dark * {
+    scrollbar-color: #4b5563 #1f2937; /* gray-600 and gray-800 */
+  }
+}
