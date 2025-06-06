@@ -217,7 +217,7 @@ const Reports: React.FC = () => {
       </div>
 
       {/* Buttons */}
-      <div className="flex space-x-3 mb-6">
+      <div className="flex flex-wrap gap-3 items-center justify-center space-x-3 mb-6">
         <button
           onClick={handleSearch}
           className="px-6 py-2.5 bg-orange-500 dark:bg-orange-600 text-white 

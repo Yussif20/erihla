@@ -55,9 +55,9 @@ const Developers: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:bg-orange-100 dark:hover:bg-orange-800 hover:text-orange-600 dark:hover:text-orange-300 transition-all duration-300"
           >
-            <BookOpen className="h-6 w-6 mr-3" />
+            <BookOpen className="dark:text-white h-6 w-6 mr-3" />
             <div>
-              <h4 className="text-sm sm:text-base font-medium">
+              <h4 className="text-sm dark:text-white sm:text-base font-medium">
                 API Documentation
               </h4>
               <p className="text-xs text-gray-500 dark:text-gray-400">
@@ -71,9 +71,9 @@ const Developers: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:bg-orange-100 dark:hover:bg-orange-800 hover:text-orange-600 dark:hover:text-orange-300 transition-all duration-300"
           >
-            <Code className="h-6 w-6 mr-3" />
+            <Code className="dark:text-white h-6 w-6 mr-3" />
             <div>
-              <h4 className="text-sm sm:text-base font-medium">
+              <h4 className="dark:text-white text-sm sm:text-base font-medium">
                 SDKs & Libraries
               </h4>
               <p className="text-xs text-gray-500 dark:text-gray-400">
@@ -87,9 +87,9 @@ const Developers: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:bg-orange-100 dark:hover:bg-orange-800 hover:text-orange-600 dark:hover:text-orange-300 transition-all duration-300"
           >
-            <Headphones className="h-6 w-6 mr-3" />
+            <Headphones className="dark:text-white h-6 w-6 mr-3" />
             <div>
-              <h4 className="text-sm sm:text-base font-medium">
+              <h4 className="dark:text-white text-sm sm:text-base font-medium">
                 Developer Support
               </h4>
               <p className="text-xs text-gray-500 dark:text-gray-400">
