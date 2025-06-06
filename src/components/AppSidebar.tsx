@@ -47,8 +47,8 @@ const AppSidebar: React.FC<{ isCollapsed: boolean }> = ({ isCollapsed }) => {
 
   return (
     <div
-      className={`sidebar bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-200 
-        shadow-lg h-full fixed top-20 transition-all duration-300 
+      className={`sidebar bg-white text-gray-900 dark:bg-gray-900 dark:border-r dark:border-gray-700 dark:text-gray-200 
+        shadow-lg h-full fixed top-15 transition-all duration-300 
         ${isCollapsed ? 'w-16 sm:w-20' : 'w-64 sm:w-72 lg:w-80'} 
         overflow-hidden z-10`}
     >
@@ -78,7 +78,7 @@ const AppSidebar: React.FC<{ isCollapsed: boolean }> = ({ isCollapsed }) => {
               <NavLink
                 key={item.path}
                 to={item.path}
-                className={`flex items-center p-3 sm:p-4 rounded-r-lg border-b border-gray-200 dark:border-gray-700 
+                className={`flex items-center p-2 sm:p-3 border-b border-gray-200 dark:border-gray-700 
                   transition-all duration-200 ${
                     isCollapsed ? 'justify-center p-2' : ''
                   } 

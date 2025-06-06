@@ -4,7 +4,7 @@ import Header from './components/Header';
 import AppSidebar from './components/AppSidebar';
 
 const Layout: React.FC = () => {
-  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(true);
 
   return (
     <div className="flex min-h-screen">
@@ -16,7 +16,7 @@ const Layout: React.FC = () => {
         />
 
         <main
-          className={`pt-16 transition-all duration-300 
+          className={`bg-white dark:bg-gray-900 lg:pt-16 transition-all duration-300 
             ${
               isSidebarCollapsed ? 'pl-16 sm:pl-20' : 'pl-64 sm:pl-72 lg:pl-80'
             } 

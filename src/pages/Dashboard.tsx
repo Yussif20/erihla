@@ -2,10 +2,10 @@ import React from 'react';
 
 const Dashboard: React.FC = () => {
   return (
-    <div className="p-4 sm:p-6 lg:p-8 bg-gray-50 dark:bg-gray-900 min-h-screen">
+    <div className="px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 ">
       {/* Welcome Header */}
       <div className="mb-8">
-        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-200">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-200 ">
           Welcome to Usim Partner Dashboard
         </h1>
         <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mt-1">

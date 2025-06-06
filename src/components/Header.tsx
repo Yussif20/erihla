@@ -2,13 +2,16 @@ import React from 'react';
 import { User, Book, Briefcase, Menu, X } from 'lucide-react';
 import ThemeSwitcher from './ThemeSwitcher';
 
+// import logoImageBlack from '../assets/vector/isolated-monochrome-black.svg';
+// import logoImageWhite from '../assets/vector/isolated-monochrome-white.svg';
+
 const Header: React.FC<{
   onToggleSidebar: () => void;
   isSidebarOpen: boolean;
 }> = ({ onToggleSidebar, isSidebarOpen }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-20 bg-gray-50 dark:bg-gray-900 shadow-md">
-      <div className="flex justify-between items-center p-3 sm:p-4 lg:p-5 mx-auto">
+      <div className="flex justify-between items-center py-2 px-4 mx-auto">
         <div className="flex items-center space-x-3 sm:space-x-4">
           <button
             onClick={onToggleSidebar}
@@ -16,14 +19,15 @@ const Header: React.FC<{
             title={isSidebarOpen ? 'Hide Sidebar' : 'Show Sidebar'}
           >
             {isSidebarOpen ? (
-              <X className="h-5 w-5 sm:h-6 sm:w-6" />
+              <X className="h-5 w-5 sm:h-6 sm:w-6 dark:text-white" />
             ) : (
-              <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
+              <Menu className="h-5 w-5 sm:h-6 sm:w-6 dark:text-white" />
             )}
           </button>
-          <h1 className="text-lg sm:text-xl lg:text-2xl font-semibold text-orange-600 dark:text-orange-300">
+          <h1 className="text-lg sm:text-xl lg:text-2xl font-semibold text-orange-600 dark:text-orange-300 italic">
             Erihla
           </h1>
+          {/* <img src={logoImageBlack} alt="Logo Image" className="size-16" /> */}
         </div>
         <div className="flex items-center space-x-2 sm:space-x-3 lg:space-x-4">
           <a

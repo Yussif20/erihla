@@ -23,7 +23,7 @@ const ApiDetails: React.FC = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg min-h-screen py-6 px-4 mx-auto">
+    <div className="min-h-screen px-4 mx-auto">
       <div className="mb-6">
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-gray-200">
           Usim API Details

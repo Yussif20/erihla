@@ -12,7 +12,7 @@ const Developers: React.FC = () => {
   };
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-br from-gray-50 to-orange-50 dark:from-gray-900 dark:to-gray-800 rounded-lg px-4 min-h-screen mx-auto">
+    <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-br from-gray-50 to-orange-50 dark:from-gray-900 dark:to-gray-800 px-4 min-h-screen mx-auto">
       {/* Header Section */}
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-200 mb-2">
